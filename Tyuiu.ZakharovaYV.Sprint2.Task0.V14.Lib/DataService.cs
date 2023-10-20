@@ -14,12 +14,12 @@ namespace Tyuiu.ZakharovaYV.Sprint2.Task0.V14.Lib
         {
             bool[] res = new bool[6];
 
-            res[0] = x + 1 == y;
-            res[1] = x != y;
-            res[2] = x < y;
-            res[3] = x + 2 > y;
-            res[4] = x <= y;
-            res[5] = x + 3 >= y;
+            res[0] = x - 321 == y;
+            res[1] = x != 1075;
+            res[2] = x - 500 < y;
+            res[3] = x - 500> y;
+            res[4] = x - 321 <= y;
+            res[5] = x - 1000 >= y;
             return res;
         }
     }
