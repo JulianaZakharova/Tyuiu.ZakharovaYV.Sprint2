@@ -24,6 +24,20 @@ namespace Tyuiu.ZakharovaYV.Sprint2.Task0.V14
             bool[] res = new bool[6];
             res = ds.GetCompareOperations(x, y);
 
+            Console.Title = "Спринт #2 | Выполнила: Захарова Ю. В. | ПКТБ 23 - 1";
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* Спринт # 2                                                              *");
+            Console.WriteLine("* Тема: Операции сравнения                                                *");
+            Console.WriteLine("* Задание # 0                                                             *");
+            Console.WriteLine("* Вариант # 14                                                            *");
+            Console.WriteLine("* Выполнила: Захарова Юлиана Владимировна   | ПКТБ-23-2                   *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                                *");
+            Console.WriteLine("* Hаписать программу из операций сравнений (==, !=, <, >, <=, >=,         *");
+            Console.WriteLine("* последовательность операций не должна нарушаться)                       *");
+            Console.WriteLine("* и арифметических выражений, которая вернет логическую                   *");
+            Console.WriteLine("* последовательность(массив):                                             *");
+            Console.WriteLine("* (True, False, True, False, True, False), при x = 1075, y = 754          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");

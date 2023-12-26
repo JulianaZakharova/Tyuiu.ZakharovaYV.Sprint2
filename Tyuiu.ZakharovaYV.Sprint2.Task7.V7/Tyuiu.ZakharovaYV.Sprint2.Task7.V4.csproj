@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7B892644-4E76-468C-B2FF-EA587F6C3405}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tyuiu.ZakharovaYV.Sprint2.Task6.V4.Lib</RootNamespace>
-    <AssemblyName>Tyuiu.ZakharovaYV.Sprint2.Task6.V4.Lib</AssemblyName>
+    <ProjectGuid>{CBD3BFE4-66A1-4D7A-BFB2-1827C31269B6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Tyuiu.ZakharovaYV.Sprint2.Task7.V7</RootNamespace>
+    <AssemblyName>Tyuiu.ZakharovaYV.Sprint2.Task7.V7</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,8 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataService.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.ZakharovaYV.Sprint2.Task7.V7.Lib\Tyuiu.ZakharovaYV.Sprint2.Task7.V4.Lib.csproj">
+      <Project>{46c6ec82-8d2b-4d44-bc05-7c0c6fe61f13}</Project>
+      <Name>Tyuiu.ZakharovaYV.Sprint2.Task7.V4.Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,7 +13,14 @@ namespace Tyuiu.ZakharovaYV.Sprint2.Task3.V24
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-
+            Console.Title = "Спринт #2 | Выполнила: Захарова Ю. В. | ПКТБ 23 - 1";
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* Спринт # 2                                                              *");
+            Console.WriteLine("* Тема: Операции сравнения                                                *");
+            Console.WriteLine("* Задание # 3                                                             *");
+            Console.WriteLine("* Вариант # 24                                                            *");
+            Console.WriteLine("* Выполнила: Захарова Юлиана Владимировна   | ПКТБ-23-2                   *");
+            Console.WriteLine("***************************************************************************");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");

@@ -7,55 +7,56 @@ using tyuiu.cources.programming.interfaces.Sprint2;
 
 namespace Tyuiu.ZakharovaYV.Sprint2.Task5.V13.Lib
 {
-    public class DataService : ISprint2Task5V13
+    public class DataService : ISprint2Task5V1
     {
-
-
-        public string FindCardSuit(int value)
+        public int FindMonthDaysCount(int value)
         {
-            string res;
-            switch (value)
-            {
-                case 1:
-                    res = "Январь";
-                    break;
-                case 2:
-                    res = "Февраль";
-                    break; case 3:
-                    res = "Март";
-                    break;
-                case 4:
-                    res = "Апрель";
-                    break;
-                case 5:
-                    res = "Май";
-                    break;
-                case 6:
-                    res = "Июнь";
-                    break;
-                case 7:
-                    res = "Июль";
-                    break;
-                case 8:
-                    res = "Август";
-                    break;
-                case 9:
-                    res = "Сентябрь";
-                    break;
-                case 10:
-                    res = "Октябрь";
-                    break
-            case 11:
-                    res = "Ноябрь";
-                    break;
-                case 12:
-                    res = "Декабрь";
-                    break;
+            
+                 int res;
+                switch (value)
+                {
+                    case 1:
+                        res = 31;
+                        break;
+                    case 2:
+                        res = 28;
+                        break;
+                    case 3:
+                        res = 31;
+                        break;
+                    case 4:
+                        res = 30;
+                        break;
+                    case 5:
+                        res = 31;
+                        break;
+                    case 6:
+                        res = 30;
+                        break;
+                    case 7:
+                        res = 31;
+                        break;
+                    case 8:
+                        res = 31;
+                        break;
+                    case 9:
+                        res = 30;
+                        break;
+                    case 10:
+                        res = 31;
+                        break;
+                    case 11:
+                        res = 30;
+                        break;
+                    case 12:
+                        res = 31;
+                        break;
 
-                    default;
+                       default:
                     throw new ArgumentException($"Месяц должен быть от 1 до 12. Значение {value}");
-            }
-            return res;
+                }
+                return res;
+            
         }
     }
 }

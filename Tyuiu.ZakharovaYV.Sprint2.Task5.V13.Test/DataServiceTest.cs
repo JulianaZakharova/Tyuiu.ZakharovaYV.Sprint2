@@ -7,31 +7,32 @@ namespace Tyuiu.ZakharovaYV.Sprint2.Task5.V13.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidFindMonthName()
+        public void ValidFindMonthDaysCount()
         {
             DataService ds = new DataService();
 
-            Assert.AreEqual("Январь", ds FindMonthName(1));
-            Assert.AreEqual("Февраль", ds FindMonthName(2));
-            Assert.AreEqual("Март", ds FindMonthNamee(3));
-            Assert.AreEqual("Апрель", ds FindMonthName(4));
-            Assert.AreEqual("Май", ds FindMonthName(5));
-            Assert.AreEqual("Июнь", ds FindMonthName(6));
-            Assert.AreEqual("Июль", ds FindMonthName(7));
-            Assert.AreEqual("Август", ds FindMonthName(8));
-            Assert.AreEqual("Сентябрь", ds FindMonthName(9));
-            Assert.AreEqual("Октябрь", ds FindMonthName(10));
-            Assert.AreEqual("Ноябрь", ds FindMonthName(11));
-            Assert.AreEqual("Декабрь", ds FindMonthName(12));
+            Assert.AreEqual(31, ds.FindMonthDaysCount(1));
+            Assert.AreEqual(28, ds.FindMonthDaysCount(2));
+            Assert.AreEqual(31, ds.FindMonthDaysCount(3));
+            Assert.AreEqual(30, ds.FindMonthDaysCount(4));
+            Assert.AreEqual(31, ds.FindMonthDaysCount(5));
+            Assert.AreEqual(30, ds.FindMonthDaysCount(6));
+            Assert.AreEqual(31, ds.FindMonthDaysCount(7));
+            Assert.AreEqual(31, ds.FindMonthDaysCount(8));
+            Assert.AreEqual(30, ds.FindMonthDaysCount(9));
+            Assert.AreEqual(31, ds.FindMonthDaysCount(10));
+            Assert.AreEqual(30, ds.FindMonthDaysCount(11));
+            Assert.AreEqual(31, ds.FindMonthDaysCount(12));
 
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                ds.FindMonthName(-1);
+                ds.FindMonthDaysCount(-1);
 
             });
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                ds.FindMonthName(13);
+                ds.FindMonthDaysCount(13);
             });
         }
+    }
 }
